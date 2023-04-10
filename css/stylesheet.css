@@ -1,0 +1,72 @@
+/* Colours */
+:root {
+
+	/* Primary*/
+	--Pink: hsl(322, 100%, 66%);
+	--LightPink: hsl(321, 100%, 78%);
+	--DarkPink: rgba(255, 82, 193, 0.218778);
+
+	--LightRed: hsl(0, 100%, 63%);
+
+	/* Neutral*/
+	--VeryDarkCyan: hsl(192, 100%, 9%);
+	--VeryPaleBlue: hsl(207, 100%, 98%);
+}
+
+/* Typography */
+@font-face {
+	font-family: poppins;
+	src: url(https://fonts.google.com/specimen/Poppins);
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: openSans;
+	src: url(https://fonts.google.com/specimen/Open+Sans);
+}
+
+/* Default */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Header */
+.header {
+	position: absolute;
+	height: 40px;
+	top: 78px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	width: 240px;
+	height: 38px;
+	margin-left: 80px;
+}
+
+.button {
+	cursor: pointer;
+	width: 136px;
+	height: 40px;
+	margin-right: 80px;
+
+	background: #FFFFFF;
+	border: 1px solid var(--Pink);
+	box-shadow: 0 0 9px var(--DarkPink);
+	border-radius: 20px;
+}
+
+.button:hover {
+	background: #FFFFFF;
+	border: 1px solid var(--LightPink);
+	box-shadow: 0 0 9px var(--DarkPink);
+	border-radius: 20px;
+}
+
+/* Hero */
