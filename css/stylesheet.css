@@ -56,13 +56,18 @@ body {
 		height: 23px;
 
 		background: #FFFFFF;
+		color: var(--Pink);
 		border: 1px solid var(--Pink);
 		box-shadow: 0 0 9px var(--DarkPink);
 		border-radius: 11px;
+		font-family: openSans, sans-serif;
+		font-size: 9px;
+		line-height: 13px;
 	}
 
 	.button-header:hover {
 		border: 1px solid var(--LightPink);
+		color: var(--LightPink);
 	}
 
 	/* Hero */
@@ -74,7 +79,6 @@ body {
 
 	.hero-heading {
 		margin: 0 15%;
-
 		overflow-wrap: break-word;
 		font-family: poppins, sans-serif;
 		font-weight: 700;
@@ -84,6 +88,34 @@ body {
 
 	.hero-paragraph {
 		margin: 2% 10%;
+		font-family: openSans, sans-serif;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.hero-button {
+		min-width: 200px;
+		height: 40px;
+		border-radius: 20px;
+		background-color: var(--Pink);
+		color: #FFFFFF;
+		font-family: openSans, sans-serif;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 18px;
+		box-shadow: 0 6px 13px rgba(0, 37, 46, 0.223053);
+		cursor: pointer;
+		border: none;
+	}
+
+	.hero-button:hover {
+		background-color: var(--LightPink);
+	}
+
+	.hero-image {
+		margin: 10% 0;
+		width: 80%;
 	}
 
 }
@@ -112,15 +144,17 @@ body {
 
 		background: #FFFFFF;
 		border: 1px solid var(--Pink);
+		color: var(--Pink);
 		box-shadow: 0 0 9px var(--DarkPink);
 		border-radius: 20px;
+		font-family: openSans, sans-serif;
+		font-size: 16px;
+		line-height: 22px;
 	}
 
 	.button-header:hover {
-		background: #FFFFFF;
 		border: 1px solid var(--LightPink);
-		box-shadow: 0 0 9px var(--DarkPink);
-		border-radius: 20px;
+		color: var(--LightPink);
 	}
 
 	/* Hero */
@@ -132,7 +166,6 @@ body {
 
 	.hero-heading {
 		margin: 0 10%;
-
 		overflow-wrap: break-word;
 		font-family: poppins, sans-serif;
 		font-weight: 700;
@@ -142,12 +175,35 @@ body {
 
 	.hero-paragraph {
 		margin: 2% 30%;
-
 		font-family: openSans, sans-serif;
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 30px;
 
+	}
+
+	.hero-button {
+		padding: 0 7%;
+		height: 80px;
+		border-radius: 40px;
+		background-color: var(--Pink);
+		color: #FFFFFF;
+		font-family: openSans, sans-serif;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 30px;
+		box-shadow: 0 6px 13px rgba(0, 37, 46, 0.223053);
+		cursor: pointer;
+		border: none;
+	}
+
+	.hero-button:hover {
+		background-color: var(--LightPink);
+	}
+
+	.hero-image {
+		width: 65%;
+		margin: 10% 0;
 	}
 
 }
