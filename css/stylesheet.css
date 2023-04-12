@@ -249,6 +249,7 @@ body {
 	.dark-blue-bg-color {
 		background-color: var(--VeryDarkCyan);
 		width: 100%;
+		height: 700px;
 	}
 
 	.footer-grid {
@@ -339,7 +340,7 @@ body {
 		line-height: 24px;
 	}
 
-	form.invalid input:invalid{
+	form.invalid input:invalid {
 		outline: none !important;
 		border: 1px solid var(--LightRed);;
 	}
@@ -386,6 +387,37 @@ body {
 
 	.subscribe-button:hover {
 		background-color: var(--LightPink);
+	}
+
+	.social-icons {
+		display: flex;
+		align-items: center;
+		margin: 2.5% 10% 5%;
+		cursor: pointer;
+	}
+
+	.facebook-icon {
+		width: 23px;
+		margin-right: 4%
+	}
+
+	.instagram-icon {
+		width: 23px;
+		margin-right: 4%;
+	}
+
+	.twitter-icon {
+		width: 23px;
+	}
+
+	.attribution {
+		background-color: #798bde;
+		width: 100%;
+		margin: 0;
+		padding: 15px 15px;
+		color: black;
+		font-family: openSans, sans-serif;
+		font-size: 16px;
 	}
 }
 
@@ -605,6 +637,7 @@ body {
 	.dark-blue-bg-color {
 		background-color: var(--VeryDarkCyan);
 		width: 100%;
+		height: 475px;
 	}
 
 	.footer-grid {
@@ -620,7 +653,7 @@ body {
 		grid-row: 1;
 		grid-column: 1;
 		width: 50%;
-		margin: 10% 20%;
+		margin: 10% 20% 0 20%;
 	}
 
 	.footer-inner-grid-2 {
@@ -630,7 +663,7 @@ body {
 		grid-row: 1;
 		grid-column: 2;
 		width: 70%;
-		margin: 10% 10%;
+		margin: 10% 10% 0 10%;
 	}
 
 	.footer-logo {
@@ -702,7 +735,7 @@ body {
 		margin-top: 5%;
 	}
 
-	form.invalid input:invalid{
+	form.invalid input:invalid {
 		outline: none !important;
 		border: 1px solid red;
 	}
@@ -749,5 +782,36 @@ body {
 
 	.subscribe-button:hover {
 		background-color: var(--LightPink);
+	}
+
+	.social-icons {
+		display: flex;
+		align-items: center;
+		margin: 2.5% 10% 5%;
+		cursor: pointer;
+	}
+
+	.facebook-icon {
+		width: 32px;
+		margin-right: 2%
+	}
+
+	.instagram-icon {
+		width: 32px;
+		margin-right: 2%;
+	}
+
+	.twitter-icon {
+		width: 32px;
+	}
+
+	.attribution {
+		background-color: #798bde;
+		width: 100%;
+		margin: 0;
+		padding: 20px 20px;
+		color: black;
+		font-family: openSans, sans-serif;
+		font-size: 16px;
 	}
 }
