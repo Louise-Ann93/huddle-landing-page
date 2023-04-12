@@ -161,6 +161,8 @@ body {
 
 	.grow-wave-mobile {
 		display: block;
+		height: 100%;
+		width: 100%;
 	}
 
 	.blue-bg-colour {
@@ -334,6 +336,8 @@ body {
 	/*	Growing Together */
 	.grow-wave-desktop {
 		display: block;
+		height: 100%;
+		width: 100%;
 	}
 
 	.grow-wave-mobile {
