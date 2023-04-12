@@ -122,6 +122,7 @@
 		display: block;
 		height: 100%;
 		width: 100%;
+		margin-bottom: -1px;
 	}
 
 	.blue-bg-colour {
@@ -372,7 +373,6 @@
 
 	.attribution {
 		background-color: #798bde;
-		width: 100%;
 		margin: 0;
 		padding: 15px 15px;
 		color: black;
