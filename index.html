@@ -69,7 +69,8 @@
 
 <!-- Flowing Conversations -->
 <div class="grid">
-	<img class="grid-img-right" src="images/illustration-flowing-conversation.svg" alt="Flowing Conversation Illustration">
+	<img class="grid-img-right" src="images/illustration-flowing-conversation.svg"
+		 alt="Flowing Conversation Illustration">
 	<div class="inner-grid-right">
 		<h2 class="heading">Flowing Conversations</h2>
 		<p class="info">You wouldn't paginate a conversation in real life, so why do it online? Our threads have
@@ -109,22 +110,74 @@
 <img class="wave-desktop" src="images/bg-footer-top-desktop.svg" alt="Wave Image">
 <img class="wave-mobile" src="images/bg-footer-top-mobile.svg" alt="Wave Image">
 
-
-<!--
 <footer>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
-	vestibulum a, ultrices quis sem.
+	<div class="dark-blue-bg-color">
+		<div class="footer-grid">
+			<div class="footer-inner-grid-1">
+				<img class="footer-logo" src="images/white-logo.svg" alt="Huddle Logo"/>
+				<p class="footer-info">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+					vestibulum a, ultrices quis sem.
+				</p>
+				<div class="footer-icon-section">
+					<div class="footer-icon-inner-section">
+						<img class="footer-icon" src="images/icon-phone.svg" alt="Phone Icon">
+						<p class="footer-comms">Phone: +1-543-123-4567</p>
+					</div>
+					<div class="footer-icon-inner-section">
+						<img class="footer-icon" src="images/icon-email.svg" alt="Email Icon">
+						<p class="footer-comms">example@huddle.com</p>
+					</div>
+				</div>
+			</div>
+			<!--	 Wrap on mobile-->
+			<div class="footer-inner-grid-2">
+				<h4 class="footer-header">Newsletter</h4>
+				<p class="footer-info">
+					To receive tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+					send you spam or pass on your email address
+				</p>
 
-	Phone: +1-543-123-4567
-	example@huddle.com
-	 Wrap on mobile
-	Newsletter
-	To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
-	send you spam or pass on your email address
-
-	Subscribe
+				<form id="subscribe-form" name="subscribe" class="footer-subscribe-section">
+					<label for="subscribe-form"></label>
+					<input name="email" class="subscribe-input" type="email" aria-label="subscribe"
+						   placeholder="john-doe@example.com" required/>
+					<input class="subscribe-button" type="submit" name="subscribe" value="Subscribe"
+						   onclick="buttonValidation(document.subscribe.email)"/>
+				</form>
+				<p class="hidden" id="email-error">Check your email please</p>
+			</div>
+		</div>
+	</div>
 </footer>
--->
+
+<script>
+
+	function buttonValidation(email) {
+		let element = document.getElementById("subscribe-form");
+		let elementError = document.getElementById("email-error")
+		let emailFormat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+		if (element.classList.contains("invalid")) {
+			element.classList.remove("invalid");
+			elementError.classList.remove("email-error");
+			elementError.classList.add("hidden");
+		}
+
+		if (email.value.match(emailFormat)) {
+			return true;
+
+		} else {
+			elementError.classList.remove("hidden");
+			element.classList.add("invalid");
+			elementError.classList.add("email-error");
+			document.subscribe.email.focus();
+			return false;
+		}
+	}
+
+</script>
+
 
 <!--  Github Links -->
 <!-- <footer>
